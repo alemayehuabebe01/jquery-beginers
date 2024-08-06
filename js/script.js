@@ -1,4 +1,10 @@
 $(document).ready(function() {
-	//our code goes
-	$('#listing > li').addClass('highlighited');
+	
+	//CSS selectors
+	var result = $('#animals .creature');
+	console.log(result);
+
+	//DOM traversing (more efficient)
+	result = $('#animals').find('.creature');
+	console.log(result);
 });
